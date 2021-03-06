@@ -46,9 +46,6 @@ public class Movie {
         return _priceCode;
     }
 
-    public void setPriceCode(int _priceCode) {
-        this._priceCode = _priceCode;
-    }
 
     public String getTitle() {
         return _title;
