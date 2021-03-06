@@ -6,6 +6,7 @@ abstract class Price {
         return 1;
     }
 }
+
 class RegularPrice extends Price {
     public double getCharge(int daysRented) {
         double charge = 2.00;
@@ -14,6 +15,7 @@ class RegularPrice extends Price {
         return charge;
     }
 }
+
 class NewReleasePrice extends Price {
     public double getCharge(int daysRented) {
         return daysRented * 3.00;
@@ -35,4 +37,3 @@ class ChildrensPrice extends Price {
         return charge;
     }
 }
-
