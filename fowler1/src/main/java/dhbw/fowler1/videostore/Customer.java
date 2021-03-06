@@ -44,6 +44,15 @@ public class Customer {
         return result;
     }
 
+    private double getTotalCharge() {
+        double charge = 0.00;
+        Enumeration rentals = _rentals.elements();
+        while (rentals.hasMoreElements()) {
+            Rental each = (Rental) rentals.nextElement();
+            charge += each.getCharge();
+        }
+        return charge;
+    }
 
     private int getTotalFrequentRenterPoints() {
         int points = 0;
