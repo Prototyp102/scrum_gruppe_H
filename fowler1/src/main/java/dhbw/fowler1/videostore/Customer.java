@@ -44,6 +44,17 @@ public class Customer {
         return result;
     }
 
+
+    private int getTotalFrequentRenterPoints() {
+        int points = 0;
+        Enumeration rentals = _rentals.elements();
+        while (rentals.hasMoreElements()) {
+            Rental each = (Rental) rentals.nextElement();
+            points += each.getFrequentRenterPoints();
+        }
+        return points;
+    }
+
     public void addRental(Rental arg) {
         _rentals.addElement(arg);
     }
