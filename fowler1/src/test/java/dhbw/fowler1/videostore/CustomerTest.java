@@ -25,6 +25,7 @@ public class CustomerTest {
         assertEquals(expected, customer.statement());
     }
 
+
     @Test
     public void statementRentNewReleaseMovieForOneDay() throws Exception {
         customer.addRental(getRental("Awesome New Release", Movie.NEW_RELEASE, 1));
